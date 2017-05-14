@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New York Times</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+    #main-header {
+        background-color: #337ab7;
+        background-image: ;
+        margin-top: 20px;
+        color: white;
+        padding: 0;
+    }
+    
+    #main-header h1 {
+        padding: 70px 10px;
+        font-size: 3em;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron" id='main-header'>
+                    <h1 class="text-center">New York Times Search</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary" id="search">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Search Parameters</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="searchterm">Search Term:</label>
+                                <input type="text" class="form-control" id="search-term" placeholder="Search Term">
+                            </div>
+                            <label for="recordsreceived">Number of Records to Retrieve:</label>
+                            <select class="form-control" id='drop-down'>
+                                <option>1</option>
+                                <option>5</option>
+                                <option>10</option>
+                            </select>
+                            <br>
+                            <div class="form-group">
+                                <label for="startyear">Start Year (Optional):</label>
+                                <input type="text" class="form-control" id="startyear" placeholder="Start Year (Optional):">
+                            </div>
+                            <div class="form-group">
+                                <label for="endyear">End Year (Optional):</label>
+                                <input type="text" class="form-control" id="endyear" placeholder="End Year (Optional):">
+                            </div>
+                            <button type="button" class="btn btn-primary" id='search-button'>Search</button>
+                            <button type="button" class="btn btn-primary" id='clear'>Clear Results</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary" id="top-articles">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Top Articles</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12" id="articleCont">
+                                <div class="well well-lg" id="article">
+                                    <h1 id='title'>Article Header</h1>
+                                    <p id='author'>By: Dr. Author M.D.</p>
+                                    <p id='section'>Section: Health</p>
+                                    <p id='date'></p>
+                                    <a href="https://google.com" id='link'>https://google.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/main.js"></script>
+</body>
+
+</html>
